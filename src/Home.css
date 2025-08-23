@@ -1,0 +1,8 @@
+.Home{
+    min-height: 200vh;
+    /* background-image: linear-gradient(0deg,black,white); */
+    padding: 0px;
+    padding-top: var(--navbar-height);
+    padding-bottom: var(--footer-height);
+    position: relative;
+}

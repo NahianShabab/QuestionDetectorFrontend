@@ -1,0 +1,15 @@
+.Footer{
+    background-color: black;
+    color:white;
+    position: fixed;
+    bottom: 0px;
+    right:0px;
+    width: 100%;
+    height: var(--footer-height);
+    z-index: 100;
+    
+}
+
+.Footer h4{
+    text-align: center;
+}
