@@ -1,12 +1,12 @@
 .Footer{
     background-color: black;
     color:white;
-    position: fixed;
+    position: absolute;
     bottom: 0px;
     right:0px;
     width: 100%;
     height: var(--footer-height);
-    z-index: 100;
+    z-index: var(--footer-z-index);
     
 }
 

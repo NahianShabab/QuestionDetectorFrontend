@@ -1,13 +1,13 @@
 
 import { useContext } from 'react'
-import './Profile.css'
+import styles from './Profile.module.css'
 import { UserContext } from './UserContext'
 import { get_user_role_as_string } from './Utils'
 export default function Profile(){
     const user = useContext(UserContext)
 
-    return user!==null && <div className="Profile">
-        <div className='ProfileBox'>
+    return user!==null && <div className={styles.Profile}>
+        <div className={styles.ProfileBox}>
             <table>
                 <tbody>
                     <tr>

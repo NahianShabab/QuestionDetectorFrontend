@@ -76,6 +76,9 @@
   :root{
     --navbar-height:60px;
     --footer-height:80px;
+    --footer-z-index:100;
+    --navbar-z-index:100;
+    --big-image-displayer-z-index:200;
   }
 
   body{

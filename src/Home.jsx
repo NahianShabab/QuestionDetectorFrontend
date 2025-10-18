@@ -3,7 +3,7 @@ import { customFetch } from "./request";
 import { Outlet } from "react-router";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
-import './Home.css'
+import styles from './Home.module.css'
 import Modal from "./Modal";
 import Profile from "./Profile";
 import { UserContext } from "./UserContext";
@@ -20,7 +20,7 @@ export default function Home(){
 
     const [user,setUser] = useState(null)
 
-    return <div className="Home">
+    return <div className={styles.Home}>
         <UserContext value={user}>
             <NavBar></NavBar>
             {/* <Profile></Profile> */}

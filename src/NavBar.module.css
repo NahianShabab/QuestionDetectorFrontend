@@ -1,0 +1,35 @@
+.NavBar{
+    background-image: linear-gradient(90deg,cadetblue,rgb(115, 219, 134));
+    color: white;
+    height: var(--navbar-height);
+    width: 100%;
+    /* border-radius: 5px; */
+    position: fixed;
+    top: 0px;
+    right:0px;
+    z-index: var(--navbar-z-index);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+}
+
+.NavBar ul{
+    list-style-type: none;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.NavBar ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+.NavBar a{
+    color: inherit;
+    text-decoration:none;
+    text-shadow: rgb(0, 0, 0) 1px 1px 10px;
+    transition: transform 0.1s;
+    display: inline-block;
+    /* font-size: x-large; */
+}
+
+.NavBar a:hover{
+    color: black;
+    transform: scale(1.1,1.1);
+}

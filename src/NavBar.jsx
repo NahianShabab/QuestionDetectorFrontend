@@ -1,6 +1,6 @@
 
 import { useContext } from 'react'
-import './NavBar.css'
+import styles from './NavBar.module.css'
 import { UserContext } from './UserContext'
 
 
@@ -25,7 +25,7 @@ export default function NavBar(){
         }
     )
 
-    return <div className="NavBar">
+    return <div className={styles.NavBar}>
         <ul>
             {link_list_items}
         </ul>

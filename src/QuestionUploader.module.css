@@ -1,0 +1,89 @@
+.QuestionUploader{
+    padding-top: 10px;
+    position: relative;
+
+    
+}
+
+.QuestionUploader .ImageCardContainer{
+        box-shadow: 0px 0px 10px gray;
+        margin-bottom: 10px;
+        padding-top: 10px;
+}
+
+ .QuestionUploaderCard{
+    min-width: 400px;
+    min-height: 200px;
+    box-shadow: 0 0 10px gray;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+ .QuestionFullImage{
+    height: 300px;
+    object-fit: contain;
+}
+ .SuccessIcon,.FailureIcon{
+    position:absolute;
+    width: 40px;
+    object-fit: contain;
+    right: 0px;
+    top: 0px;
+    transform: translate(-50%,50%);
+    pointer-events: none;
+}
+
+.QuestionUploaderCardSections{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.QuestionUploaderCardSections > * {
+    border: 2px solid rgba(125, 213, 24, 0.251)
+}
+ .FragmentImageDiv{
+    max-width: 600px;
+}
+
+.BigImageDisplayer{
+    background-image: linear-gradient(red,black);
+    width: 400px;
+    height: 400px;
+
+}
+
+.BigImageDisplayerOverlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: var(--big-image-displayer-z-index);
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+ .FragmentImage{
+    display: inline-block;
+    width: 100px;
+    margin-left: 10px;
+    /* margin-bottom: 10px; */
+}
+
+.ImageCard{
+    display: inline-block;
+    
+    /* width: 300px; */ 
+    
+    object-fit: contain;
+    /* background-color: aqua; */
+    /* border:10px solid black; */
+}
+
+.ImageCard.ReducedOpacityOnHover:hover{
+    opacity: 0.5    ;
+}
