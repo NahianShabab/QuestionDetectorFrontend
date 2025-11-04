@@ -4,7 +4,7 @@ import { Outlet } from "react-router";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import styles from './Home.module.css'
-import Modal from "./Modal";
+// import Modal from "./Modal";
 import Profile from "./Profile";
 import { UserContext } from "./UserContext";
 
@@ -41,7 +41,7 @@ export default function Home(){
                 window.location.href = '/login'
             }         
         }catch(e){
-
+            window.location.href = '/login'
         }finally{
 
         }

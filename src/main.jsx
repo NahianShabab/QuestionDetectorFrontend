@@ -7,18 +7,18 @@ import { Routes,Route } from 'react-router'
 import Login from './Login.jsx'
 import Profile from './Profile.jsx'
 import QuestionUploader from './QuestionUploader.jsx'
+import SetterQuestions from './SetterQuestions'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home></Home>}>
           <Route path='profile' element={<Profile></Profile>}></Route>
           <Route path='upload-questions' element={<QuestionUploader></QuestionUploader>}></Route>
+          <Route path='setter-questions' element={<SetterQuestions></SetterQuestions>}></Route>
         </Route>
         <Route path='/login' element={<Login></Login>}/>
       </Routes>
       
     </BrowserRouter>
-  </StrictMode>,
 )
