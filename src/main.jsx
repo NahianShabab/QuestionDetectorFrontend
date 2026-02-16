@@ -8,6 +8,8 @@ import Login from './Login.jsx'
 import Profile from './Profile.jsx'
 import QuestionUploader from './QuestionUploader.jsx'
 import SetterQuestions from './SetterQuestions'
+import ComposerImage from './ComposerImage.jsx'
+
 
 createRoot(document.getElementById('root')).render(
     <BrowserRouter>
@@ -16,6 +18,7 @@ createRoot(document.getElementById('root')).render(
           <Route path='profile' element={<Profile></Profile>}></Route>
           <Route path='upload-questions' element={<QuestionUploader></QuestionUploader>}></Route>
           <Route path='setter-questions' element={<SetterQuestions></SetterQuestions>}></Route>
+          <Route path='composer-image' element={<ComposerImage/>}></Route>
         </Route>
         <Route path='/login' element={<Login></Login>}/>
       </Routes>

@@ -95,3 +95,12 @@ button{
 button:disabled{
   background-color: gray;
 }
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: black;
+    vertical-align: top; /* Aligns checkbox to top of text */
+    margin-right: 8px;   /* Optional spacing between checkbox and label */
+    cursor: pointer;
+}

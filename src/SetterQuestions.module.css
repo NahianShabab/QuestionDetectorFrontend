@@ -29,10 +29,21 @@
     background-color: black;
 }
 
+.SelectedContainer{
+    border-radius: 5px;
+    box-shadow:0px 0px 10px gray;
+    padding: 10px;
+    margin-bottom: 10px;
+}
 
 .QuestionCard{
     border-radius: 5px;
     box-shadow:0px 0px 10px gray;
     margin-bottom: 10px;
     padding: 10px;
+    position: relative;
+}
+.QuestionCardSuccessImage{
+    position: absolute;
+    left:0%;
 }

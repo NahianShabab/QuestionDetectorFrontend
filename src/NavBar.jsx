@@ -9,7 +9,8 @@ export default function NavBar(){
     const links = [
         {url:'/',text:'Home'},
         {url:'/profile',text:'Profile'},
-        {url:'/tutorial',text:'Tutorial'}
+        {url:'/tutorial',text:'Tutorial'},
+        {url:'/login',text:'Login'}
     ]
     if(user!==null){
         if(user.user_role==='setter'){
@@ -17,6 +18,8 @@ export default function NavBar(){
             links.push({url:'/setter-questions',text:'My Questions'})
         }else if(user.user_role==='admin'){
             links.push({url:'/create-user',text:'Create User'})
+        }else if(user.user_role==='composer'){
+            links.push({url:'/composer-image',text:'Image'})
         }
     }
 

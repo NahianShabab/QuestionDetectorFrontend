@@ -65,14 +65,19 @@ export default function QuestionUploader() {
         try {
             console.log('Inside Submit Questions!');
             setIsSubmitting(true)
+            let has_file = false
             const formData = new FormData()
             for (let u of uploadResults) {
                 const file = u.file
                 if (file !== null
                     && u.result?.success === true) {
                     formData.append('images',file)
+                    has_file=true
                 }
 
+            }
+            if(!has_file){
+                return
             }
             const response = await customFetch(
                 {link:'/setter/upload_question_images',body:formData,isFile:true,method:'POST'}
