@@ -23,7 +23,7 @@ createRoot(document.getElementById('root')).render(
                <h3>
                 ❖ View the Tutorial <Link to={'/tutorial'}>video</Link>
               </h3>
-              <div>❖ <DownloadQuestionForm></DownloadQuestionForm></div> 
+              <div><DownloadQuestionForm></DownloadQuestionForm></div> 
             </div>
            
           }></Route>
