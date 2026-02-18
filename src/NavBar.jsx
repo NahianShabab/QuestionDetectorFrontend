@@ -2,6 +2,7 @@
 import { useContext } from 'react'
 import styles from './NavBar.module.css'
 import { UserContext } from './UserContext'
+import DownloadQuestionForm from './DownloadQuestionForm'
 
 
 export default function NavBar(){
@@ -10,7 +11,7 @@ export default function NavBar(){
         {url:'/',text:'Home'},
         {url:'/profile',text:'Profile'},
         {url:'/tutorial',text:'Tutorial'},
-        {url:'/login',text:'Login'}
+        {url:'/login',text:'Logout'}
     ]
     if(user!==null){
         if(user.user_role==='setter'){
@@ -19,19 +20,21 @@ export default function NavBar(){
         }else if(user.user_role==='admin'){
             links.push({url:'/create-user',text:'Create User'})
         }else if(user.user_role==='composer'){
-            links.push({url:'/composer-image',text:'Image'})
+            links.push({url:'/composer-image',text:'Assigned Images'})
         }
     }
 
+    
     const link_list_items = links.map(
         (l,i)=>{
-            return <li key={i}><a href={l.url}>{l.text}</a></li>
+            return <li key={l.url}><a href={l.url}>{l.text}</a></li>
         }
     )
 
     return <div className={styles.NavBar}>
         <ul>
             {link_list_items}
+            {user?.user_role==='setter' && <li><DownloadQuestionForm></DownloadQuestionForm></li>}
         </ul>
     </div>
 }

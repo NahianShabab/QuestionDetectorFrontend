@@ -4,6 +4,7 @@ import { Outlet } from "react-router";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import styles from './Home.module.css'
+import { Link } from "react-router";
 // import Modal from "./Modal";
 import Profile from "./Profile";
 import { UserContext } from "./UserContext";
@@ -24,6 +25,7 @@ export default function Home(){
         <UserContext value={user}>
             <NavBar></NavBar>
             {/* <Profile></Profile> */}
+            
             <Outlet></Outlet>
             {/* <Modal></Modal> */}
             <Footer></Footer>

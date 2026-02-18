@@ -66,6 +66,10 @@ export default function SetterQuestions() {
                         
                         <button disabled={isSendingRequest} onClick={()=>{delete_questions(selectedSubmitted)}}>Delete</button>
                     </div>}
+                    <h3>
+                        {all_questions.submitted.length===0?'No Questions to Show':`${
+                        all_questions.submitted.length} questions have been submitted for transcription`}
+                    </h3>
                     {
                         all_questions.submitted.map(v=>
                         <QuestionCard key={v.question_id} question_id={v.question_id} is_confirmed={false} 
@@ -101,6 +105,10 @@ export default function SetterQuestions() {
                         onClick={confirm_questions}>Confirm</button>
                         <button disabled={isSendingRequest} onClick={()=>{delete_questions(selectedTranscribed)}}>Delete</button>
                     </div>}
+                    <h3>
+                        {all_questions.transcribed.length===0?'No Questions to Show':`${
+                        all_questions.transcribed.length} questions have been transcribed`}
+                    </h3>
                     {
                         all_questions.transcribed.map(v=>
                         <QuestionCard key={v.question_id} question_id={v.question_id} is_confirmed={false} 
@@ -117,9 +125,13 @@ export default function SetterQuestions() {
                         ></QuestionCard>)
                     }
                     
+                    
                 </div>
                 <div className={`${mode === 'confirmed' ? '' : styles.Hidden}`}>
-                    
+                    <h3>
+                        {all_questions.confirmed.length===0?'No Questions to Show':`${
+                        all_questions.confirmed.length} questions have been confirmed`}
+                    </h3>
                     {   
                         all_questions.confirmed.map(v=>
                         <QuestionCard key={v.question_id} question_id={v.question_id} is_confirmed={true} 

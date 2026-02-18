@@ -27,7 +27,7 @@ export default function Login() {
             <div className={styles.LoginInput}>
                 <label className={formData.password === '' ? `${styles.BackgroundLabelVisible}` :
                  `${styles.BackgroundLabelHidden}`}>
-                    Password</label><input type="text" disabled={isSendingRequest}
+                    Password</label><input type="password" disabled={isSendingRequest} autoComplete="current-password"
                         onChange={(e) => {
                             setFormData({ ...formData, password: e.target.value })
                         }}></input>
