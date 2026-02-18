@@ -18,12 +18,12 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path='/' element={<Home></Home>}>
           <Route index element={
-            <div>
+            <div style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
+              <h1>Welcome to Question Uploader Website</h1>
                <h3>
-                <Link to={'/tutorial'}>View Tutorial</Link>
+                ❖ View the Tutorial <Link to={'/tutorial'}>video</Link>
               </h3>
-  
-              <DownloadQuestionForm></DownloadQuestionForm>
+              <div>❖ <DownloadQuestionForm></DownloadQuestionForm></div> 
             </div>
            
           }></Route>
