@@ -33,6 +33,8 @@ export default function Home(){
 
     async function load_user(){
         try{
+            console.log('BACKEND URL IS: ',import.meta.env.VITE_BACKEND_URL);
+            
             const response = await customFetch({link:'/users/me',method:'GET'})
             if(response.ok){
                 const result = await response.json()
